@@ -1,0 +1,7 @@
+# requirement_trace.py 与 make_detection_file.py 的依赖（在线安装用）
+# 有网机器执行 install_offline_deps.bat online 即会读取本文件。
+# 说明：
+#   - 两个脚本都只需 pandas（读 Excel/建表）与 openpyxl（.xlsx 引擎/样式/合并单元格）；
+#   - 调用 DeepSeek 复核用的是 Python 标准库 urllib/json，无需额外安装任何包。
+pandas==3.0.5
+openpyxl==3.1.5
