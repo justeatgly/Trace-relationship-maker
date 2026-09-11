@@ -249,10 +249,10 @@ def build_detection_file(
                 low = Requirement(low_id, "", "")
             _apply_row_style(ws, row, data_styles, row_height)
             if index == 0:
-                left = [high.identifier, high.name, high.description, True, None, None]
+                left = [high.identifier, high.name, high.description, True, False, None]
                 for column, value in enumerate(left, start=1):
                     ws.cell(row, column, value)
-            right = [low.identifier, low.name, low.description, True, None, None]
+            right = [low.identifier, low.name, low.description, True, False, None]
             for column, value in enumerate(right, start=7):
                 ws.cell(row, column, value)
             row += 1

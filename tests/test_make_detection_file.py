@@ -86,6 +86,11 @@ class DetectionFileTest(unittest.TestCase):
         self.assertTrue(ws["J3"].value)
         self.assertTrue(ws["J4"].value)
         self.assertTrue(ws["J5"].value)
+        self.assertFalse(ws["E3"].value)
+        self.assertFalse(ws["K3"].value)
+        self.assertFalse(ws["K4"].value)
+        self.assertFalse(ws["E5"].value)
+        self.assertFalse(ws["K5"].value)
         for column in "ABCDEF":
             self.assertIn(f"{column}3:{column}4", ws.merged_cells)
 
